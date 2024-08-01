@@ -1,0 +1,148 @@
+﻿@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+sbody {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; 
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.left-side {
+    
+}
+
+    .left-side img {
+        max-width: 80%; 
+        height: auto;
+    }
+
+.right-side {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-block {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+    .content-block h2 {
+        margin-bottom: 5px;
+        font-size: 2em; 
+        font-weight: normal; 
+        color: #333; 
+    }
+
+    .content-block p {
+        margin-bottom: 30px;
+        margin-top: 0px;
+        font-size: 1em; 
+        color: #666; 
+    }
+
+    .content-block form {
+        width: 100%; 
+    }
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+    .input-container label {
+        position: absolute;
+        top: -7px; 
+        left: 10px; 
+        font-size: 0.8em;
+        color: #007bff; 
+        background-color: white;
+        padding: 0 2px; 
+        pointer-events: none;
+    }
+
+    .input-container input {
+        width: 100%;
+        padding: 15px 0px 15px 15px;
+        font-size: 1em;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box; 
+    }
+
+    .input-container .icon {
+        position: absolute;
+        top: 42%;
+        right: 15px; 
+        transform: translateY(-50%);
+        font-size: 1em; 
+        color: #666; 
+        pointer-events: none; 
+    }
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+    .otp-container input {
+        width: 50px; 
+        height: 50px; 
+        text-align: center;
+        font-size: 1em; 
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box; 
+        margin: 0 10px 20px;
+    }
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+    button:hover {
+        background-color: #0056b3; 
+    }
+
+.container::before {
+    content: "";
+    width: 1px;
+    background-color: #ccc;
+    height: calc(100% - 80px);
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+}

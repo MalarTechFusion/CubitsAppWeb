@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "K16buM+Gu/U0N18uH99jjvQ0+sV4TPLcY1e6Xz/GEB8wRhKEVFV217BEcwe5JGUxf6Rc7hsZhJ2VU7JH4gMEVA==",
+  "success": true,
+  "projectFilePath": "C:\\Malarvizhi\\CubitsAppWeb\\CubitsAppWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\system.net.http.json\\7.0.1\\system.net.http.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

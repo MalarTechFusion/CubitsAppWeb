@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Enter OTP";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <!-- Place your logo image here -->
+            <img src="https://static.wixstatic.com/media/80b28e_4d33a0f470844233ac6db1cdbd8b7585~mv2.png/v1/fill/w_118,h_35,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/CUBITS-Logo.pngs" alt="Logo" />
+        </div>
+        <div class="right-side">
+            <div class="content-block">
+                <h2>Welcome!</h2>
+                <p>Enter OTP sent to @ViewBag.Email</p>
+
+                <form asp-action="VerifyOtp" method="post">
+                    <div class="otp-container">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="email" value="@ViewBag.Email" />
+                        <input type="text" name="Otp1" maxlength="1" required />
+                        <input type="text" name="Otp2" maxlength="1" required />
+                        <input type="text" name="Otp3" maxlength="1" required />
+                        <input type="text" name="Otp4" maxlength="1" required />
+                    </div>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

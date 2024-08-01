@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Enter Email";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <!-- Place your logo image here -->
+            <img src="https://static.wixstatic.com/media/80b28e_4d33a0f470844233ac6db1cdbd8b7585~mv2.png/v1/fill/w_118,h_35,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/CUBITS-Logo.pngs" alt="Logo" />
+        </div>
+        <div class="right-side">
+            <div class="content-block">
+                <h2>Welcome!</h2>
+                <p>Enter your Email to login</p>
+
+                <form asp-action="SendOtp" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" required />
+                        <i class="fa-regular fa-envelope icon"></i>
+                    </div>
+                    <button type="submit">Send OTP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
